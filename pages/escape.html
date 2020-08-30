@@ -1,0 +1,461 @@
+<!-- works.htmlのhead内script(jQuery) -->
+<script
+src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+crossorigin="anonymous"></script>
+
+
+<!-- CSS -->
+
+/* レスポンシブデザイン(スマホ縦)480px以下 */
+@media screen and (max-width: 480px) {
+/* 共通 */
+
+
+
+body{
+  
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #333333;/*元333333*/
+  font-size: 15px;
+  line-height: 2;
+  /* margin-bottom: 0px;
+  padding-bottom: 0px; */
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin-top: 0px;
+  font-family: 'Kosugi Maru', sans-serif;
+  
+}
+
+img{
+  vertical-align: bottom;
+}
+
+ul,header{
+ margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited{
+  color: #788d98;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1{
+  font-size: 2.5vw;
+}
+
+header {
+  
+  width: 100%;
+  height:  	19.5vw;
+  /* height: 74px; */
+  background-color: #000000;
+  position: fixed;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.pc-global-nav {
+  display: none;
+}
+
+.humberger {
+  display: block;
+  font-size: 13vw;
+  opacity: 0.72;
+  float: right;
+ 
+}
+
+/* .humber-back {
+  width: 13vw;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0.72;
+  background-color: #FFFFFF;
+  /* display: block; */
+  /* float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.humber {
+  padding-left: 14px;
+  padding-top: 5px;
+}  */
+
+
+footer {
+  width: 100%;
+  /* height: 40px; */
+  height: 13.335vw;
+  font-size: 2.5vw;
+  color: #ffffff;
+  /* text-align: center; */
+  background-color: #000000;
+  padding-bottom: 0px;
+  position: absolute;
+  
+ 
+  z-index: 20;
+  
+}
+
+footer p {
+  line-height: 13.335vw;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+
+.menu {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  position: fixed;
+  margin-top: 19.5vw;
+  z-index: 10;
+  background-color: #000000;
+  font-size: 8vw;
+  visibility: hidden;
+  opacity: 0;
+  /* transition: 2s; */
+  
+  
+  
+}
+
+
+
+
+
+.menu nav {
+  margin-top: 20vw;
+}
+
+.menu li {
+  margin-bottom: 20vw;
+  line-height: 8vw;
+}
+
+.show {
+  visibility: visible;
+ 
+
+
+  /* フェードインアニメーション */
+  animation-name: show;
+  animation-duration: 1.5s; /*アニメーション時間*/
+  animation-timing-function: ease-out; /*アニメーションさせるイージング*/
+  animation-delay: 0.1s; /*アニメーション開始させる時間*/
+  animation-iteration-count: 1; /*繰り返し回数*/
+  animation-direction: normal; /*往復処理をするかどうか*/
+  animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
+}
+
+
+/* アニメーションタイミング */
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+  /* スマホTOPページ */
+#wrap-top {
+  clear: both;
+  width: 100%;
+  height: 667px;
+  background-image: url("../images/shots-top-bg.jpg");
+  background-size: auto;
+  z-index: 2;
+  /* position: absolute; */
+
+  
+}
+
+
+
+.shots {
+  font-size: 18vw;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 210px;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.shots span {
+  display: inline-block;
+  width: 80%;
+  border-bottom: solid 10px #ffffff;
+  
+}
+
+
+.shots-info {
+  margin-top: -10%;
+}
+
+.works {
+ 
+  /* margin-top: -50px; */
+  font-size: 10vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about {
+  /* margin-top: -50px; */
+  font-size: 10vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* スマホWorksページ */
+
+#works-top {
+  clear: both;
+  max-width: 100%;
+  height: 667px;
+  background-color: rgba(211,203,221,0.7);
+  z-index: 2;
+}
+
+
+
+
+.pics {
+  width: 90%;
+  /* display: block; */
+  margin: 0 auto;
+  
+}
+
+.pics img{
+  
+  max-width: 100%;
+  /* max-height: 200px;  */
+  margin-top: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/* スライドショー要素画像のオン・オフ */
+.slide {
+  display: none;
+  
+}
+
+.active {
+  display: block;
+  
+}
+
+
+
+
+
+.clickers {
+  margin-top: 20px;
+  width: 70%;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn {
+  
+  font-size: 7vw;
+  color: #111111;
+  display: inline-block;
+  width:100px;
+  margin: 10px;
+  opacity: 0.65;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+
+
+  /* display: none;  */
+}
+
+.next-btn {
+  
+  font-size: 7vw;
+  color: #111111;  
+  display: inline-block;
+  width:100px;
+  margin: 10px;
+  opacity: 0.65;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-noclick {
+  pointer-events: none;
+}
+
+
+
+
+
+
+/* スマホAboutページ */
+#about-top {
+  clear: both;
+  max-width: 100%;
+  background-color: rgba(211,203,221,0.7);
+  z-index: 2;
+}
+
+
+.profile-pic {
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 170px;
+}
+
+.profile-pic img{
+  max-width: 100%; 
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.profile-title  {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 6vw;
+  font-weight: bold;
+
+}
+
+
+
+
+.profile-text {
+  width: 90%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+
+.profile-table {
+  font-size: 3.5vw;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+
+
+.profile-table th {
+  vertical-align: top;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.profile-table td {
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+
+.contacts {
+  max-width: 90%;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts a {
+  color: #000000;
+}
+
+
+.list-items {
+  font-size: 20vw;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.circle-shadow {
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.circle-shadow-clicked {
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+/* .circle-shadow-clicked-twitter {
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.circle-shadow-clicked-email {
+  box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+} */
+
+
+/* インスタ等のボタンがクリックされた際 */
+.clicked {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  
+}
+
+
+
+
+
+}
+
