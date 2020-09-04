@@ -285,6 +285,7 @@ crossorigin="anonymous"></script>
   </style>
 
 <title>Contact</title>
+<link rel="icon" href="../images/favicon.ico">
 </head>
 <body>
   <div class="wrapper" id="contact">
