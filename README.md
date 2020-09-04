@@ -13,4 +13,4 @@ About、Works、Contactのパートに分かれており、Worksでは写真の�
 
 レスポンシブ対応時のハンバーガーメニューとサイト内クリックに対するUIの振舞いに対してはVanilla JavaScriptでコーディングしております。
 
-こちらから見ることができます：[サイトリンク(外部)](https://www.introsample02.com/)
+こちらから見ることができます：[サイトリンク(外部)](https://www.introsample02.com/){:target="_blank"}
